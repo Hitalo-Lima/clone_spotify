@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --verde: #1ed760;
+    --fonte-padrao: 'Lato', sans-serif;
+}
+body{
+    font-family: var(--fonte-padrao);
+}
+/*cabeçalho*/
+header{
+    width: 100%;
+}
+.container-header{
+    background-color: #000;
+    padding: 0 40px;
+    max-width: 1200px;
+    margin: auto;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header img#logo-header{
+    height: 40px;
+}
+.menu-header{
+    position: relative;
+}
+header .menu-header ul{
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+header .menu-header ul li{
+    color: white;
+}
+header .menu-header ul li a{
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+header .menu-header ul li a:hover{
+    color: var(--verde);
+}
+.menu-mobile{
+    position: absolute;
+    right: 40px;
+    top: 30px;
+    visibility: hidden;
+}
+.menu-header .menu-mobile img{
+    visibility: hidden;
+    height: 32px;
+}
+/*fim cabeçalho*/
+
+main{
+    width: 100%;
+    margin: auto;
+    
+}
+h1{
+    font-size: 4em;
+    font-weight: bold;
+}
+h2{
+    font-size: 1.5em;
+    line-height: 1.5;
+    padding: 30px 0;
+}
+.sec-free, .sec-premium{
+    max-width: 1200px;
+    margin: auto;
+    padding: 80px 50px;
+}
+.p-info{
+    font-weight: lighter;
+    line-height: 1.5;
+    font-size: 0.8em;
+}
+button{
+    border-radius: 30px;
+    padding: 15px 35px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 0;
+    font-size: 0.9em;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+button:hover{
+    transform: scale(1.05);
+}
+/*seção free*/
+.container-sec-free{
+    background-image: url(../imagens/dragon-scales.svg);
+    background-size: cover;
+}
+.sec-free{
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    color: var(--verde);
+}
+.p-sec{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1em;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+}
+.sec-free button{
+    background-color: var(--verde);
+    color: #2941AB;
+
+}
+.sec-free .p-info{
+    font-weight: lighter;
+}
+/*fim seção free*/
+
+/*seção premium*/
+.container-sec-premium{
+    background-image: url(../imagens/img-music1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.sec-premium{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    color: white;
+}
+/*fim seção premium*/
+
+/*rodapé*/
+footer{
+    width: 100%;
+    padding: 70px 40px;
+    background-color: #000;
+    color: white;
+}
+.container-footer{
+    max-width: 1200px;
+    margin: auto;
+}
+footer #logo-footer{
+    height: 50px !important; 
+}
+footer li{
+    list-style: none;
+}
+footer a{
+    text-decoration: none;
+    color: rgb(253, 244, 227);
+}
+.media-and-links{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+.menu-footer{
+    display: flex;
+    gap: 80px;
+}
+.menu-footer .dl-title{
+    color: gray;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+.menu-footer .dl-footer dd a:hover{
+    color: var(--verde);
+}
+.menu-footer .dl-title, .menu-footer .dl-footer dd{
+    margin-bottom: 20px;
+}
+.links-footer img{
+    height: 40px;
+    opacity: .4;
+    transition: opacity .3s ease;
+}
+.links-footer img:hover{
+    opacity: 1;
+}
+.links-footer ul{
+    display: flex;
+}
+.links-footer ul li{
+    margin-right: 20px;
+}
+.add-info{
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: gray;
+}
+.add-info-links{
+    align-self: flex-end;
+}
+.add-info nav ul{
+    display: flex;
+    gap: 20px;
+}
+.add-info-links ul li a{
+    color: gray;
+}
+.add-info nav ul li a:hover{
+    color: var(--verde);
+}
+.add-info-copy{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+/*fim rodapé*/
